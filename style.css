@@ -1,0 +1,207 @@
+:root
+{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.m-y
+{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.m-y-2
+{
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+body 
+{
+    font-size: 16px;
+    font-family: 'Karla';
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main
+{
+    max-width: 600px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.253);
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.top
+{
+    padding: 1.5rem;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1
+{
+    color: var(--cyan);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.paragraph-yellow
+{
+    color: var(--bright-yellow);
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: .7rem;
+}
+.paragraph-blue
+{
+    color: var(--grayish-blue);
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.flex
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mid
+{
+    padding: 1.5rem;
+    background-color: var(--cyan);
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+h2
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.price
+{
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.inline-center
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inline-center + p 
+{
+    font-size: .9rem;
+}
+
+.gray 
+{
+    color: rgba(211, 211, 211, 0.575);
+}
+
+.sign-btn
+{
+    width: 100%;
+    border-radius: .3rem;
+    border: none;
+    color: white;
+    padding: 1rem;
+    background-color: var(--bright-yellow);
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.171);
+    transition: 0.1s ease-in-out;
+}
+
+.sign-btn:hover
+{
+    background-color: hsl(71, 100%, 50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+
+.bottom
+{
+    padding: 1.5rem;
+    background-color: hsl(179, 62%, 45%);
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+ul 
+{
+    list-style-type: none;
+    font-size: .8rem;
+    color: rgb(209, 209, 209);
+}
+
+li
+{
+    margin: .2rem;
+}
+
+.attribution
+{
+    font-family: 'Karla';
+    font-size: 1rem;
+    color: var(--grayish-blue);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.attribution a
+{
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+
+@media screen and (min-width: 670px) 
+{
+    .flex
+    {
+        flex-direction: row;
+    }
+
+    main 
+    {
+        border-radius: .5rem;
+    }
+
+    .top
+    {
+        padding: 6%;
+    }
+    .mid
+    {
+        padding: 6%;
+    }
+    .bottom
+    {
+        padding: 6%;
+    }
+}
